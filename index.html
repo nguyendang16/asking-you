@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
       rel="stylesheet"
@@ -14,14 +18,36 @@
   </head>
   <body>
     <main class="container">
-      <img class="cat-img" src="/img/cat-0.jpg" alt="Picture of a cat" />
+      <img
+        class="cat-img"
+        src="img/cat-0.jpg"
+        alt="Picture of a cat"
+      />
       <p class="title">Dear PMai, Do you want to hangout with me?</p>
       <div class="buttons">
         <button type="button" class="btn btn--yes">Yes</button>
         <button type="button" class="btn btn--no">No</button>
       </div>
+
+      <!-- Biểu mẫu nhập địa chỉ (ẩn ban đầu) -->
+      <form
+        name="address-form"
+        method="POST"
+        data-netlify="true"
+        class="form hidden"
+      >
+        <input type="hidden" name="form-name" value="address-form" />
+        <p class="form-title">Hãy nhập địa chỉ của emmm:</p>
+        <input
+          type="text"
+          name="address"
+          class="form-input"
+          required
+        />
+        <button type="submit" class="btn btn--send">Send</button>
+      </form>
     </main>
 
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

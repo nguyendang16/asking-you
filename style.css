@@ -65,6 +65,35 @@ body {
   background-color: #f03e3e;
 }
 
+/* Đảm bảo lớp 'hidden' hoạt động đúng */
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+/* Style cho biểu mẫu */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  font-size: 2.4rem;
+  color: #f53699;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn--send {
+  background-color: #228be6;
 }
