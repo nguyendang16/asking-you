@@ -53,7 +53,7 @@ function handleFormSubmit(event) {
   })
     .then(function () {
       // Hiển thị thông điệp cuối cùng
-      titleElement.innerHTML = "Yayyy!! Hẹn gặp em vào thứ 4 ^^";
+      titleElement.innerHTML = "Yayyy!! Hẹn gặp em vào tối nay ^^";
       titleElement.classList.remove("hidden");
 
       // Ẩn biểu mẫu
