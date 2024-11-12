@@ -32,10 +32,8 @@ function handleYesClick() {
   titleElement.classList.add("hidden");
   buttonsContainer.classList.add("hidden");
 
-  // Hiển thị biểu mẫu
+  // Hiển thị biểu mẫu và thay đổi hình ảnh thành cat-0.jpg
   formElement.classList.remove("hidden");
-
-  // Thay đổi hình ảnh thành cat-0.jpg khi biểu mẫu hiển thị
   catImg.src = "img/cat-0.jpg";
 }
 
@@ -55,13 +53,13 @@ function handleFormSubmit(event) {
   })
     .then(function () {
       // Hiển thị thông điệp cuối cùng
-      titleElement.innerHTML = "Yayyy!! Hẹn gặp em vào tối nay ^^";
+      titleElement.innerHTML = "Yayyy!! Hẹn gặp em vào thứ 4 ^^";
       titleElement.classList.remove("hidden");
 
       // Ẩn biểu mẫu
       formElement.classList.add("hidden");
 
-      // Thay đổi hình ảnh khi nhấn "Yes" để gửi thông điệp cuối cùng
+      // Thay đổi hình ảnh khi gửi thông điệp cuối cùng
       changeImage("yes");
     })
     .catch(function (error) {
